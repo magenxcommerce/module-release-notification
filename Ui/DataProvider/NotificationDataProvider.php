@@ -82,7 +82,7 @@ class NotificationDataProvider implements DataProviderInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function getData()
     {
@@ -95,7 +95,7 @@ class NotificationDataProvider implements DataProviderInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function getMeta()
     {
@@ -107,7 +107,7 @@ class NotificationDataProvider implements DataProviderInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function getName()
     {
@@ -115,15 +115,15 @@ class NotificationDataProvider implements DataProviderInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function getConfigData()
     {
-        return $this->data['config'] ?? [];
+        return isset($this->data['config']) ? $this->data['config'] : [];
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function setConfigData($config)
     {
@@ -133,7 +133,7 @@ class NotificationDataProvider implements DataProviderInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      * @SuppressWarnings(PHPMD.UnusedFormalParameter)
      */
     public function getFieldMetaInfo($fieldSetName, $fieldName)
@@ -142,7 +142,7 @@ class NotificationDataProvider implements DataProviderInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      * @SuppressWarnings(PHPMD.UnusedFormalParameter)
      */
     public function getFieldSetMetaInfo($fieldSetName)
@@ -151,7 +151,7 @@ class NotificationDataProvider implements DataProviderInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      * @SuppressWarnings(PHPMD.UnusedFormalParameter)
      */
     public function getFieldsMetaInfo($fieldSetName)
@@ -160,7 +160,7 @@ class NotificationDataProvider implements DataProviderInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function getPrimaryFieldName()
     {
@@ -168,7 +168,7 @@ class NotificationDataProvider implements DataProviderInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function getRequestFieldName()
     {
@@ -176,28 +176,31 @@ class NotificationDataProvider implements DataProviderInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
+     * @SuppressWarnings(PHPMD.UnusedFormalParameter)
      */
     public function addFilter(\Magento\Framework\Api\Filter $filter)
     {
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
+     * @SuppressWarnings(PHPMD.UnusedFormalParameter)
      */
     public function addOrder($field, $direction)
     {
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
+     * @SuppressWarnings(PHPMD.UnusedFormalParameter)
      */
     public function setLimit($offset, $size)
     {
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function getSearchCriteria()
     {
@@ -205,7 +208,7 @@ class NotificationDataProvider implements DataProviderInterface
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      */
     public function getSearchResult()
     {
