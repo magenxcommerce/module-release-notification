@@ -1,12 +1,6 @@
 {
     "name": "magenxcommerce/module-release-notification",
     "description": "N/A",
-    "type": "magento2-module",
-    "license": [
-        "OSL-3.0",
-        "AFL-3.0"
-    ],
-    "version": "100.4.0",
     "require": {
         "php": "~7.3.0||~7.4.0",
         "magento/module-user": "101.2.*",
@@ -17,6 +11,11 @@
     "suggest": {
         "magento/module-config": "101.2.*"
     },
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
     "autoload": {
         "files": [
             "registration.php"
@@ -24,5 +23,6 @@
         "psr-4": {
             "Magento\\ReleaseNotification\\": ""
         }
-    }
+    },
+    "version": "100.4.0"
 }
